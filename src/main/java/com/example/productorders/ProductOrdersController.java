@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class ProductOrdersController {
     
     @PostMapping("/orders")
-    public ResponseEntity<String> orderProduct(@RequestBody String orderRequest) {
+    public ResponseEntity<String> orderProduct(@RequestBody OrderRequest orderRequest) {
         
-        return ResponseEntity.ok(null);
+        return ResponseEntity.ok("Order processed succesfully");
     }
 }
