@@ -9,5 +9,8 @@ public class OrderRequest {
     String productName;
     String productDescription;
     BigDecimal amount;
-    String paymentType;    
+    String paymentType;
+
+    public OrderRequest() {
+    }
 }
