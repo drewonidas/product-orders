@@ -14,7 +14,7 @@ spec:
         app: product-orders
     spec:
       containers:
-        - image: localhost/product-orders:latest
+        - image: docker.io/drewonidas/product-orders:latest
         name: product-orders
         ports:
         - containerPort: 80
