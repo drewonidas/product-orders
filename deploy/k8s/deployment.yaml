@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: product-orders
+spec:
+  replicas: 1
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: product-orders
+  template:
+    metadata:
+      labels:
+        app: product-orders
+    spec:
+      containers:
+        - image: localhost/product-orders:latest
+        name: product-orders
+        ports:
+        - containerPort: 80

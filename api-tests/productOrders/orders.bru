@@ -1,0 +1,20 @@
+meta {
+  name: orders
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://cb-load-balancer-211318326.af-south-1.elb.amazonaws.com:8080/orders
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "productName": "string",
+    "productDescription": "string",
+    "amount": 0,
+    "paymentType": "string"
+  }
+}

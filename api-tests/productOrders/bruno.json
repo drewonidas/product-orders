@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "productOrders",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}
