@@ -14,7 +14,7 @@ spec:
         app: product-orders
     spec:
       containers:
-        - image: localhost:5000/product-orders:latest
+        - image: localhost:5000/product-orders
         name: product-orders
         ports:
         - containerPort: 80
